@@ -1,0 +1,76 @@
+/* ================================================================ 
+This copyright notice must be untouched at all times.
+
+The original version of this stylesheet and the associated (x)html
+is available at http://www.stunicholls.com/various/solar_map.html
+Copyright (c) 2005-2007 Stu Nicholls. All rights reserved.
+This stylesheet and the associated (x)html may be modified in any 
+way to fit your requirements.
+=================================================================== */
+
+#map {position:relative; margin:0; width:700px; height:503px; font:76% arial, verdana, sans-serif;}
+#map ul {padding:0; margin:0; list-style:none; position:absolute; top:0; left:0;}
+#map ul li {position:absolute; display:block; cursor:pointer; background:url(transparent.gif);}
+#map ul li.sun {width:100px; height:50px; top:135px; left:126px;}
+#map ul li.mercury {width:69px; height:70px; top:77px; left:291px; }
+#map ul li.venus {width:117px; height:119px; top:306px; left:130px;}
+#map ul li.moon {width:104px; height:104px; top:352px; left:346px;}
+#map ul li.earth {width:257px; height:257px; top:246px; left:435px;}
+
+#map ul li:hover {z-index:300;}
+#map ul li.click {z-index:500;}
+
+#map ul li:hover.sun {background:url(/wp-content/HighlightRect.jpg);}
+#map ul li:hover.mercury {background:url(/wp-content/mercury.jpg);}
+#map ul li:hover.venus {background:url(/wp-content/venus.jpg);}
+#map ul li:hover.moon {background:url(/wp-content/moon.jpg);}
+#map ul li:hover.earth {background:url(/wp-content/earth.jpg);}
+
+#map ul li .xsnazzy {visibility:hidden;}
+
+#map ul li.click .xsnazzy {visibility:visible;}
+
+/* For IE7 to keep the :hover over .xsnazzy - goodness knows why? */
+#map ul li.click .xsnazzy {background:url(transparent.gif);}
+
+.xsnazzy {display:block; position:absolute; height:auto; text-align:center;}
+
+.sun .xsnazzy {left:150px; top:-200px; width:300px;}
+.mercury .xsnazzy {left:55px; top:-20px; width:210px;}
+.venus .xsnazzy {left:-130px; top:-90px; width:230px;}
+.moon .xsnazzy {left:-195px; top:-160px; width:300px;}
+.earth .xsnazzy {left:-70px; top:-160px; width:250px;}
+
+.xsnazzy h1, .xsnazzy p {margin:0 10px;}
+.xsnazzy h1 {font-size:2.5em; color:#6f9; font-family:georgia, "times new roman", serif; border-bottom:1px solid #fff;}
+.xsnazzy p {padding-bottom:0.5em; color:#eee; font-size:12px; text-align:left;}
+.xsnazzy {background: transparent; margin:1em;}
+
+
+.xb1, .xb2, .xb3, .xb4, .xb5, .xb6, .xb7 {display:block; font-size:0; overflow:hidden;}
+.xb1, .xb2, .xb3, .xb4, .xb5, .xb6 {height:1px;}
+.xb4, .xb5, .xb6, .xb7 {background:#ccc; border-left:1px solid #fff; border-right:1px solid #fff;}
+.xb1 {margin:0 8px; background:#fff;}
+.xb2 {margin:0 6px; background:#fff;}
+.xb3 {margin:0 4px; background:#fff;}
+.xb4 {margin:0 3px; background:#7f7f9c; border-width:0 5px;}
+.xb5 {margin:0 2px; background:#7f7f9c; border-width:0 4px;}
+.xb6 {margin:0 2px; background:#7f7f9c; border-width:0 3px;} 
+.xb7 {margin:0 1px; background:#7f7f9c; border-width:0 3px; height:2px;} 
+
+.xboxcontent {display:block; background:#7f7f9c; border:3px solid #fff; border-width:0 3px;}
+.xboxcontent a, .xboxcontent a:visited {display:block; color:#ff0; font-weight:bold; font-size:12px; text-indent:0; padding:4px;}
+
+#map ul li.click .xsnazzy .xboxcontent a:hover {color:#fff;}
+
+.xsnazzy em.point_top {display:block; font-size:0; width:25px; height:14px; background:url(point.gif) center top; position:absolute; left:50px; top:-11px;}
+
+.xsnazzy em.point_bottom {display:block; font-size:0; width:25px; height:14px; background:url(point.gif) center bottom; position:absolute; right:50px; bottom:-11px;}
+/* for IE5.5 */
+* html .xsnazzy em.point_bottom {bottom:-12px;}
+
+.xsnazzy em.point_left {display:block; font-size:0; width:14px; height:25px; background:url(point.gif) left center; position:absolute; left:-11px; top:30px;}
+
+.xsnazzy em.point_right {display:block; font-size:0; width:14px; height:25px; background:url(point.gif) right center; position:absolute; right:-11px; top:125px;}
+/* for IE5.5 */
+* html .xsnazzy em.point_right {right:-12px; ri\ght:-11px;}
